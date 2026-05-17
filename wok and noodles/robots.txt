@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://woknoodles.ro/sitemap.xml
+
+# Crawl-delay pentru roboți mai lenți
+Crawl-delay: 10
+
+# Blochează fișiere inutile pentru indexare
+Disallow: /node_modules/
+Disallow: /.git/
