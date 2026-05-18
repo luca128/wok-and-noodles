@@ -213,7 +213,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; a
 nav.scrolled { background: rgba(13,17,23,0.96); backdrop-filter: blur(16px); border-bottom-color: rgba(245,124,0,0.15); height: 56px; }
 .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; opacity: 0; animation: fadeDown 0.7s 0.2s ease forwards; }
 .nav-logo img { height: 34px; }
-.nav-logo-text { font-family: 'Dancing Script', cursive; font-size: 22px; color: var(--orange); }
+.nav-logo-text { font-family: 'Cinzel', serif; font-size: 20px; color: var(--orange); letter-spacing: 0.08em; font-weight: 700; }
 .nav-links { display: flex; gap: 1.6rem; list-style: none; opacity: 0; animation: fadeDown 0.7s 0.35s ease forwards; }
 .nav-links a { text-decoration: none; color: rgba(255,255,255,0.75); font-size: 13px; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; transition: color 0.2s; position: relative; }
 .nav-links a::after { content: ''; position: absolute; bottom: -3px; left: 0; right: 0; height: 1px; background: var(--orange); transform: scaleX(0); transform-origin: left; transition: transform 0.3s; }
@@ -234,10 +234,11 @@ nav.scrolled { background: rgba(13,17,23,0.96); backdrop-filter: blur(16px); bor
 .hero-content { position: relative; z-index: 2; padding: 0 2rem; max-width: 780px; text-align: center; margin: 0 auto; width: 100%; }
 .hero-eyebrow { display: inline-flex; align-items: center; gap: 8px; background: rgba(245,124,0,0.12); border: 1px solid rgba(245,124,0,0.3); padding: 5px 14px; border-radius: 100px; font-size: 12px; color: var(--orange); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1.5rem; opacity: 0; animation: fadeUp 0.9s 0.4s ease forwards; }
 .hero-eyebrow::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--orange); flex-shrink: 0; animation: pulse 2s infinite; }
-.hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(42px, 5.5vw, 72px); font-weight: 700; color: var(--white); line-height: 1.08; margin-bottom: 1.5rem; overflow: hidden; }
+.hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(34px, 4.5vw, 60px); font-weight: 700; color: var(--white); line-height: 1.12; margin-bottom: 1.5rem; overflow: hidden; }
 .hero h1 .line { display: block; opacity: 0; transform: translateY(100%); animation: slideUp 0.8s cubic-bezier(.22,1,.36,1) forwards; }
 .hero h1 .line:nth-child(1) { animation-delay: 0.55s; }
 .hero h1 .line:nth-child(2) { animation-delay: 0.7s; }
+.hero h1 .line:nth-child(3) { animation-delay: 0.85s; }
 .hero h1 em { font-style: italic; color: var(--orange); }
 .hero-desc { font-size: 16px; color: rgba(255,255,255,0.6); line-height: 1.7; max-width: 500px; margin: 0 auto 2.5rem; font-weight: 300; opacity: 0; animation: fadeUp 0.9s 0.9s ease forwards; }
 .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; opacity: 0; animation: fadeUp 0.9s 1.05s ease forwards; }
@@ -250,6 +251,10 @@ nav.scrolled { background: rgba(13,17,23,0.96); backdrop-filter: blur(16px); bor
 .btn:hover::before { transform: translateX(0); }
 .btn-orange { background: var(--orange); color: #fff; }
 .btn-orange:hover { background: var(--orange-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(245,124,0,0.35); }
+.btn-glovo { background: rgba(255,194,68,0.15); color: #FFC244; border: 1px solid rgba(255,194,68,0.4); }
+.btn-glovo:hover { background: rgba(255,194,68,0.25); border-color: #FFC244; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(255,194,68,0.2); }
+.btn-wolt { background: rgba(0,157,224,0.15); color: #009DE0; border: 1px solid rgba(0,157,224,0.4); }
+.btn-wolt:hover { background: rgba(0,157,224,0.25); border-color: #009DE0; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,157,224,0.2); }
 .btn-outline { background: transparent; color: rgba(255,255,255,0.8); border: 1px solid rgba(255,255,255,0.25); }
 .btn-outline:hover { border-color: var(--orange); color: var(--orange); transform: translateY(-2px); }
 .phone-btn { display: inline-flex; align-items: center; gap: 10px; background: var(--orange); color: #fff; padding: 12px 22px; border-radius: 6px; font-size: 15px; font-weight: 500; text-decoration: none; transition: all 0.25s; font-family: 'DM Sans', sans-serif; position: relative; overflow: hidden; }
@@ -632,13 +637,18 @@ footer { background: var(--dark2); padding: 2.5rem 5rem; display: flex; align-it
   <div class="hero-content">
     <div class="hero-eyebrow">🐉 Restaurant Asiatic · Galați</div>
     <h1>
-      <span class="line">Gusturi <em>autentice</em></span>
-      <span class="line">din Orient · <em>Galați</em></span>
+      <span class="line">La <em>Wok and Noodles</em></span>
+      <span class="line">aducem gustul <em>Asiei</em></span>
+      <span class="line">direct în farfurie</span>
     </h1>
-    <p class="hero-desc">Tăiței chinezești, sushi proaspăt și specialități asiatice — pregătite zilnic cu pasiune. Livrare prin Glovo și Wolt.</p>
+    <p class="hero-desc">La Wok and Noodles aducem gustul Asiei direct în farfurie, sushi proaspăt și specialități asiatice pregătite zilnic cu pasiune. Livrări și rezervări la numărul de telefon sau prin Glovo și Wolt.</p>
     <div class="hero-actions">
-      <a href="meniu.pdf" target="_blank" class="btn btn-orange">Vezi meniul</a>
-      <a href="#despre" class="btn btn-outline">Află mai mult</a>
+      <a href="tel:+40770803320" class="btn btn-orange">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.38 2 2 0 0 1 3.55 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.72A16 16 0 0 0 16 16.73l.88-.88a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        0770 803 320
+      </a>
+      <a href="https://glovoapp.com/ro/ro/galati/stores/wok-and-noodles-glt" target="_blank" rel="noopener" class="btn btn-glovo">🛵 Glovo</a>
+      <a href="https://wolt.com/ro/rou/galati/restaurant/wok-and-noodles-67dac687a0d80030d679bcbf" target="_blank" rel="noopener" class="btn btn-wolt">📦 Wolt</a>
     </div>
   </div>
   <div class="hero-scroll"><div class="scroll-line"></div>scroll</div>
@@ -984,10 +994,16 @@ if(frame) curtainObs.observe(frame);
     </div>
   </div>
 </div>
-<div style="background:#080C10;padding:10px 5rem;display:flex;align-items:center;justify-content:center;gap:10px;border-top:1px solid rgba(255,255,255,0.04);">
-  <span style="font-size:12px;color:rgba(255,255,255,0.25);font-family:'DM Sans',sans-serif;">Designed by Luca</span>
-  <a href="https://www.instagram.com/velichi.luca/" target="_blank" style="display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:6px;background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="#fff"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+<div style="background:#080C10;padding:16px 5rem;display:flex;align-items:center;justify-content:center;gap:14px;border-top:1px solid rgba(255,255,255,0.06);">
+  <span style="font-size:13px;color:rgba(255,255,255,0.35);font-family:'DM Sans',sans-serif;">Designed by</span>
+  <a href="https://www.instagram.com/velichi.luca/" target="_blank" rel="noopener"
+     style="display:inline-flex;align-items:center;gap:8px;text-decoration:none;padding:6px 14px;border-radius:20px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);transition:all 0.2s;"
+     onmouseover="this.style.background='rgba(193,53,132,0.15)';this.style.borderColor='rgba(193,53,132,0.4)'"
+     onmouseout="this.style.background='rgba(255,255,255,0.05)';this.style.borderColor='rgba(255,255,255,0.1)'">
+    <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:6px;background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);flex-shrink:0;">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="#fff"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+    </span>
+    <span style="font-size:13px;color:rgba(255,255,255,0.6);font-family:'DM Sans',sans-serif;font-weight:500;">@velichi.luca</span>
   </a>
 </div>
 <script>
