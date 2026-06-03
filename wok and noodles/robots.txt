@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://woknoodles.ro/sitemap.xml
+Sitemap: https://www.wok-and-noodles.ro/sitemap.xml
 
 # Crawl-delay pentru roboți mai lenți
 Crawl-delay: 10
