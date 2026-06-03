@@ -128,6 +128,25 @@
     .btn-out{border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.75);padding:13px 28px;border-radius:6px;text-decoration:none;font-size:14px;transition:all 0.2s;}
     .btn-out:hover{border-color:var(--orange);color:var(--orange);}
 
+    /* VIDEO GALLERY */
+    .video-section { margin-top: 48px; }
+    .video-portrait-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px; max-width: 560px; margin-left: auto; margin-right: auto; }
+    .video-landscape-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .video-wrap { position: relative; border-radius: 14px; overflow: hidden; cursor: pointer; background: #000; }
+    .video-wrap.portrait { aspect-ratio: 9/16; }
+    .video-wrap.landscape { aspect-ratio: 16/9; }
+    .video-wrap video { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .video-overlay { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.3); transition: all 0.25s; }
+    .video-wrap:hover .video-overlay { background: rgba(0,0,0,0.15); }
+    .video-wrap.sound-on .video-overlay { background: transparent; }
+    .play-icon { font-size: 2.2rem; filter: drop-shadow(0 2px 8px rgba(0,0,0,0.6)); transition: all 0.2s; }
+    .video-wrap.sound-on .play-icon { font-size: 1.2rem; opacity: 0; }
+    .video-wrap:hover .play-icon { opacity: 1 !important; font-size: 1.8rem !important; }
+    @media(max-width:600px) {
+      .video-portrait-row { max-width: 100%; }
+      .video-landscape-row { grid-template-columns: 1fr; }
+    }
+
     /* FOOTER */
     footer{background:var(--dark2);padding:28px 48px;text-align:center;font-size:12px;color:rgba(255,255,255,0.3);border-top:1px solid rgba(245,124,0,0.1);}
     footer a{color:rgba(255,255,255,0.4);text-decoration:none;}
@@ -246,6 +265,44 @@
     </div>
   </div>
 
+  <!-- VIDEO GALLERY -->
+  <div class="video-section">
+    <h2 class="upcoming-title" style="margin-bottom:8px;">Momente <em>din restaurant</em></h2>
+    <p style="font-size:14px;color:var(--muted);margin-bottom:32px;">Apasă pe orice clip pentru a activa sunetul.</p>
+
+    <!-- Portrait row: video6 + video7 -->
+    <div class="video-portrait-row">
+      <div class="video-wrap portrait" onclick="toggleSound(this)">
+        <video src="video6.mp4" autoplay muted loop playsinline></video>
+        <div class="video-overlay">
+          <div class="play-icon">🔇</div>
+        </div>
+      </div>
+      <div class="video-wrap portrait" onclick="toggleSound(this)">
+        <video src="video7.mp4" autoplay muted loop playsinline></video>
+        <div class="video-overlay">
+          <div class="play-icon">🔇</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Landscape row: video8 + video9 -->
+    <div class="video-landscape-row">
+      <div class="video-wrap landscape" onclick="toggleSound(this)">
+        <video src="video8.mp4" autoplay muted loop playsinline></video>
+        <div class="video-overlay">
+          <div class="play-icon">🔇</div>
+        </div>
+      </div>
+      <div class="video-wrap landscape" onclick="toggleSound(this)">
+        <video src="video9.mp4" autoplay muted loop playsinline></video>
+        <div class="video-overlay">
+          <div class="play-icon">🔇</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <!-- CTA -->
@@ -264,5 +321,28 @@
   <a href="index.html">Acasă</a> · <a href="blog.html">Blog</a> · <a href="politica-confidentialitate.html">Confidențialitate</a> · <a href="https://anpc.ro" target="_blank">ANPC</a></p>
 </footer>
 
+<script>
+function toggleSound(wrap) {
+  const video = wrap.querySelector('video');
+  const icon = wrap.querySelector('.play-icon');
+  if (video.muted) {
+    // Mute all others first
+    document.querySelectorAll('.video-wrap').forEach(w => {
+      if (w !== wrap) {
+        w.querySelector('video').muted = true;
+        w.querySelector('.play-icon').textContent = '🔇';
+        w.classList.remove('sound-on');
+      }
+    });
+    video.muted = false;
+    icon.textContent = '🔊';
+    wrap.classList.add('sound-on');
+  } else {
+    video.muted = true;
+    icon.textContent = '🔇';
+    wrap.classList.remove('sound-on');
+  }
+}
+</script>
 </body>
 </html>
