@@ -5,21 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Blog | Wok and Noodles Galați — Ghiduri despre mâncarea asiatică</title>
   <meta name="description" content="Descoperă lumea asiatică prin articolele blogului Wok and Noodles Galați. Ghiduri despre sushi, tăiței chinezești, wok și specialități asiatice."/>
-  <meta name="keywords" content="blog restaurant asiatic galati, ce este sushi, taitei chinezesti, mancare asiatica ghid, sushi galati, wok galati"/>
   <meta name="robots" content="index, follow"/>
-  <link rel="canonical" href="https://www.wok-and-noodles.ro/blog.html"/>
+  <link rel="canonical" href="https://www.wok-and-noodles.ro/blog"/>
   <meta property="og:title" content="Blog Wok and Noodles Galați | Ghiduri despre mâncarea asiatică"/>
   <meta property="og:description" content="Articole despre sushi, tăiței chinezești, wok și cultura asiatică — de la restaurantul asiatic #1 din Galați."/>
   <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://www.wok-and-noodles.ro/blog.html"/>
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <meta property="og:url" content="https://www.wok-and-noodles.ro/blog"/>
+  <meta property="og:image" content="https://www.wok-and-noodles.ro/og-image.jpg"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png"/>
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon.png"/>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Blog",
     "name": "Blog Wok and Noodles Galați",
     "description": "Ghiduri și articole despre mâncarea asiatică — sushi, tăiței chinezești, wok și specialități",
-    "url": "https://www.wok-and-noodles.ro/blog.html",
+    "url": "https://www.wok-and-noodles.ro/blog",
     "publisher": {
       "@type": "Restaurant",
       "name": "Wok and Noodles Galați",
@@ -27,29 +32,36 @@
     }
   }
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&family=Cinzel:wght@700&display=swap" rel="stylesheet"/>
+  <link rel="preload" href="fonts/playfair-display-700-normal.woff2" as="font" type="font/woff2" crossorigin/>
   <style>
+@font-face { font-family: 'DM Sans Fallback'; src: local('Arial'), local('ArialMT'), local('Liberation Sans'), local('Helvetica'); ascent-override: 94.9%; descent-override: 29.66%; line-gap-override: 0%; size-adjust: 104.53%; }
+@font-face { font-family: 'Playfair Display Fallback'; src: local('Times New Roman'), local('TimesNewRomanPSMT'), local('Liberation Serif'), local('Times'); ascent-override: 97.25%; descent-override: 22.56%; line-gap-override: 0%; size-adjust: 111.26%; }
+@font-face { font-family: 'Playfair Display'; font-style: normal; font-weight: 700; font-display: swap; src: url(fonts/playfair-display-700-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Playfair Display'; font-style: italic; font-weight: 400; font-display: swap; src: url(fonts/playfair-display-400-italic.woff2) format('woff2'); }
+@font-face { font-family: 'DM Sans'; font-style: normal; font-weight: 300; font-display: swap; src: url(fonts/dm-sans-300-normal.woff2) format('woff2'); }
+@font-face { font-family: 'DM Sans'; font-style: normal; font-weight: 400; font-display: swap; src: url(fonts/dm-sans-400-normal.woff2) format('woff2'); }
+@font-face { font-family: 'DM Sans'; font-style: normal; font-weight: 500; font-display: swap; src: url(fonts/dm-sans-500-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Dancing Script'; font-style: normal; font-weight: 700; font-display: swap; src: url(fonts/dancing-script-700-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Cinzel'; font-style: normal; font-weight: 700; font-display: swap; src: url(fonts/cinzel-700-normal.woff2) format('woff2'); }
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
     :root{--orange:#F57C00;--dark:#0D1117;--dark2:#111820;--cream:#FFF8F0;--text:#1A1A1A;--muted:#6B7280;--border:rgba(0,0,0,0.08);}
     html{scroll-behavior:smooth;}
-    body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);}
+    body{font-family:'DM Sans', 'DM Sans Fallback', sans-serif;background:var(--cream);color:var(--text);}
     nav{position:sticky;top:0;z-index:100;background:rgba(13,17,23,0.96);backdrop-filter:blur(16px);padding:0 48px;height:64px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(245,124,0,0.15);}
     .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;}
     .nav-logo img{height:34px;}
     .nav-logo-text{font-family:'Cinzel',serif;font-size:18px;color:var(--orange);font-weight:700;letter-spacing:0.08em;}
-    .nav-back{font-size:0.85rem;color:rgba(255,255,255,0.5);text-decoration:none;transition:color 0.2s;}
+    .nav-back{font-size:0.85rem;color:rgba(255,255,255,0.7);text-decoration:none;transition:color 0.2s;}
     .nav-back:hover{color:var(--orange);}
     .nav-links{display:flex;gap:24px;list-style:none;}
-    .nav-links a{text-decoration:none;color:rgba(255,255,255,0.6);font-size:0.82rem;letter-spacing:0.06em;text-transform:uppercase;transition:color 0.2s;}
+    .nav-links a{text-decoration:none;color:rgba(255,255,255,0.7);font-size:0.82rem;letter-spacing:0.06em;text-transform:uppercase;transition:color 0.2s;}
     .nav-links a:hover{color:var(--orange);}
 
     .hero{background:var(--dark);padding:80px 48px 60px;text-align:center;}
     .hero-tag{font-size:11px;text-transform:uppercase;letter-spacing:0.15em;color:var(--orange);margin-bottom:16px;}
-    .hero h1{font-family:'Playfair Display',serif;font-size:clamp(32px,5vw,56px);font-weight:700;color:#fff;margin-bottom:16px;}
+    .hero h1{font-family:'Playfair Display', 'Playfair Display Fallback', serif;font-size:clamp(32px,5vw,56px);font-weight:700;color:#fff;margin-bottom:16px;}
     .hero h1 em{font-style:italic;color:var(--orange);}
-    .hero p{font-size:16px;color:rgba(255,255,255,0.5);max-width:540px;margin:0 auto;line-height:1.7;}
+    .hero p{font-size:16px;color:rgba(255,255,255,0.7);max-width:540px;margin:0 auto;line-height:1.7;}
 
     .blog-container{max-width:1100px;margin:0 auto;padding:60px 48px 80px;}
     .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
@@ -60,24 +72,24 @@
     .card-img{height:180px;background:linear-gradient(135deg,var(--dark) 0%,#1a2332 100%);display:flex;align-items:center;justify-content:center;font-size:4.5rem;}
     .card-body{padding:22px;flex:1;display:flex;flex-direction:column;}
     .card-tag{display:inline-block;background:rgba(245,124,0,0.1);color:var(--orange);font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;margin-bottom:10px;text-transform:uppercase;letter-spacing:0.06em;}
-    .card-title{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--dark);line-height:1.4;margin-bottom:10px;}
+    .card-title{font-family:'Playfair Display', 'Playfair Display Fallback', serif;font-size:1.05rem;font-weight:700;color:var(--dark);line-height:1.4;margin-bottom:10px;}
     .card-desc{font-size:13px;color:var(--muted);line-height:1.65;flex:1;margin-bottom:16px;}
     .card-footer{display:flex;justify-content:space-between;align-items:center;padding-top:12px;border-top:1px solid var(--border);}
     .card-date{font-size:12px;color:var(--muted);}
     .card-read{font-size:12px;color:var(--orange);font-weight:500;}
 
     .cta-strip{background:var(--dark);padding:60px 48px;text-align:center;margin-top:0;}
-    .cta-strip h2{font-family:'Playfair Display',serif;font-size:clamp(24px,3vw,36px);color:#fff;margin-bottom:12px;}
+    .cta-strip h2{font-family:'Playfair Display', 'Playfair Display Fallback', serif;font-size:clamp(24px,3vw,36px);color:#fff;margin-bottom:12px;}
     .cta-strip h2 em{font-style:italic;color:var(--orange);}
-    .cta-strip p{font-size:15px;color:rgba(255,255,255,0.5);margin-bottom:28px;}
+    .cta-strip p{font-size:15px;color:rgba(255,255,255,0.7);margin-bottom:28px;}
     .cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
-    .btn-o{background:var(--orange);color:#fff;padding:13px 28px;border-radius:6px;text-decoration:none;font-weight:500;font-size:14px;transition:all 0.2s;}
+    .btn-o{background:#F57C00;color:#0D1117;padding:13px 28px;border-radius:6px;text-decoration:none;font-weight:500;font-size:14px;transition:all 0.2s;}
     .btn-o:hover{background:#FF9800;transform:translateY(-2px);}
     .btn-out{border:1px solid rgba(255,255,255,0.25);color:rgba(255,255,255,0.8);padding:13px 28px;border-radius:6px;text-decoration:none;font-size:14px;transition:all 0.2s;}
     .btn-out:hover{border-color:var(--orange);color:var(--orange);}
 
-    footer{background:var(--dark2);padding:28px 48px;text-align:center;font-size:12px;color:rgba(255,255,255,0.3);border-top:1px solid rgba(245,124,0,0.1);}
-    footer a{color:rgba(255,255,255,0.4);text-decoration:none;}
+    footer{background:var(--dark2);padding:28px 48px;text-align:center;font-size:12px;color:rgba(255,255,255,0.7);border-top:1px solid rgba(245,124,0,0.1);}
+    footer a{color:rgba(255,255,255,0.7);text-decoration:none;}
 
     @media(max-width:900px){
       nav{padding:0 20px;}
@@ -87,13 +99,19 @@
       .blog-grid{grid-template-columns:1fr;}
       .cta-strip{padding:40px 20px;}
     }
+    /* contrast: portocaliu închis pe fundal deschis, aprins pe fundal închis */
+    :root{--orange:#B45309;}
+    nav, .hero, .card-img, .cta-strip, footer{--orange:#F57C00;}
+    footer, footer p{color:rgba(255,255,255,0.7);}
+    footer a{color:rgba(255,255,255,0.85);text-decoration:underline;}
+    .social-btn.fb{color:#0F5BC4;}
   </style>
 </head>
 <body>
 
 <nav>
   <a href="index.html" class="nav-logo">
-    <img src="favicon.png" alt="Wok and Noodles"/>
+    <img src="logo-68.png" alt="" width="34" height="34"/>
     <span class="nav-logo-text">Wok and Noodles</span>
   </a>
   <ul class="nav-links">
@@ -115,7 +133,7 @@
   <div class="blog-grid">
 
     <a href="blog/ce-este-sushi.html" class="blog-card">
-      <div class="card-img" style="padding:0;height:220px;"><img src="sushi.png" alt="Sushi la Wok and Noodles Galați" style="width:100%;height:100%;object-fit:cover;display:block;"/></div>
+      <div class="card-img" style="padding:0;height:220px;"><img src="sushi-700.webp" srcset="sushi-700.webp 700w, sushi.webp 1200w" sizes="(max-width: 900px) 100vw, 350px" width="1200" height="675" fetchpriority="high" alt="Sushi la Wok and Noodles Galați" style="width:100%;height:100%;object-fit:cover;display:block;"/></div>
       <div class="card-body">
         <span class="card-tag">Ghid</span>
         <h2 class="card-title">Ce este sushi și cum se mănâncă corect — ghid complet pentru începători</h2>
@@ -133,9 +151,9 @@
 
   <div style="text-align:center;margin-top:48px;padding:40px 24px;background:#fff;border:1px solid rgba(0,0,0,0.07);border-radius:14px;">
     <div style="font-size:2.5rem;margin-bottom:16px;">✍️</div>
-    <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:#0D1117;margin-bottom:10px;">Mai multe articole <em style="font-style:italic;color:#F57C00;">în pregătire</em></h3>
+    <h3 style="font-family:'Playfair Display', 'Playfair Display Fallback', serif;font-size:1.4rem;font-weight:700;color:#0D1117;margin-bottom:10px;">Mai multe articole <em style="font-style:italic;color:var(--orange);">în pregătire</em></h3>
     <p style="font-size:14px;color:#6B7280;line-height:1.7;max-width:480px;margin:0 auto;">Lucrăm la ghiduri despre tăiței asiatici, sosuri, Mochi, Sake și multe altele. Urmărește-ne pe Instagram pentru a fi primul care află când publicăm.</p>
-    <a href="https://www.instagram.com/wokandnoodles" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;margin-top:20px;background:#F57C00;color:#fff;padding:11px 24px;border-radius:6px;text-decoration:none;font-size:14px;font-weight:500;transition:all 0.2s;">
+    <a href="https://www.instagram.com/wokandnoodles" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;margin-top:20px;background:#F57C00;color:#0D1117;padding:11px 24px;border-radius:6px;text-decoration:none;font-size:14px;font-weight:500;transition:all 0.2s;">
       📸 @wokandnoodles pe Instagram
     </a>
   </div>
@@ -152,8 +170,9 @@
 </div>
 
 <footer>
-  <p>© 2026 GASTRO ASIA SRL · Wok and Noodles Galați · <a href="index.html">Înapoi la site</a> · <a href="politica-confidentialitate.html">Confidențialitate</a></p>
+  <p>© 2026 GASTRO ASIA SRL · Wok and Noodles Galați · <a href="index.html">Înapoi la site</a> · <a href="politica-confidentialitate.html">Confidențialitate</a> · <a href="#" data-cookie-settings>Setări cookie</a></p>
 </footer>
 
+<script src="analytics.js" defer></script>
 </body>
 </html>

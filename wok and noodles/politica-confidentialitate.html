@@ -4,12 +4,23 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Politică de Confidențialitate | Wok and Noodles</title>
-  <meta name="robots" content="noindex, follow"/>
-  <link rel="icon" type="image/png" href="favicon.png"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <meta name="description" content="Politica de confidențialitate GASTRO ASIA SRL — Wok and Noodles Galați: ce date colectăm, de ce și ce drepturi ai conform GDPR."/>
+  <link rel="canonical" href="https://www.wok-and-noodles.ro/politica-confidentialitate"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png"/>
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon.png"/>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+  <link rel="preload" href="fonts/playfair-display-700-normal.woff2" as="font" type="font/woff2" crossorigin/>
   <style>
+@font-face { font-family: 'DM Sans Fallback'; src: local('Arial'), local('ArialMT'), local('Liberation Sans'), local('Helvetica'); ascent-override: 94.9%; descent-override: 29.66%; line-gap-override: 0%; size-adjust: 104.53%; }
+@font-face { font-family: 'Playfair Display Fallback'; src: local('Times New Roman'), local('TimesNewRomanPSMT'), local('Liberation Serif'), local('Times'); ascent-override: 97.25%; descent-override: 22.56%; line-gap-override: 0%; size-adjust: 111.26%; }
+@font-face { font-family: 'Playfair Display'; font-style: normal; font-weight: 700; font-display: swap; src: url(fonts/playfair-display-700-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Playfair Display'; font-style: italic; font-weight: 400; font-display: swap; src: url(fonts/playfair-display-400-italic.woff2) format('woff2'); }
+@font-face { font-family: 'DM Sans'; font-style: normal; font-weight: 300; font-display: swap; src: url(fonts/dm-sans-300-normal.woff2) format('woff2'); }
+@font-face { font-family: 'DM Sans'; font-style: normal; font-weight: 400; font-display: swap; src: url(fonts/dm-sans-400-normal.woff2) format('woff2'); }
+@font-face { font-family: 'DM Sans'; font-style: normal; font-weight: 500; font-display: swap; src: url(fonts/dm-sans-500-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Dancing Script'; font-style: normal; font-weight: 700; font-display: swap; src: url(fonts/dancing-script-700-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Cinzel'; font-style: normal; font-weight: 700; font-display: swap; src: url(fonts/cinzel-700-normal.woff2) format('woff2'); }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
       --orange: #F57C00;
@@ -20,7 +31,7 @@
       --muted: #6B7280;
       --border: rgba(0,0,0,0.08);
     }
-    body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--text); line-height: 1.75; }
+    body { font-family: 'DM Sans', 'DM Sans Fallback', sans-serif; background: var(--cream); color: var(--text); line-height: 1.75; }
 
     nav {
       background: var(--dark);
@@ -33,8 +44,8 @@
     }
     .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
     .nav-logo img { height: 34px; }
-    .nav-logo-text { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--orange); font-style: italic; }
-    .nav-back { font-size: 0.85rem; color: rgba(255,255,255,0.5); text-decoration: none; transition: color 0.2s; }
+    .nav-logo-text { font-family: 'Playfair Display', 'Playfair Display Fallback', serif; font-size: 1.1rem; color: var(--orange); font-style: italic; }
+    .nav-back { font-size: 0.85rem; color: rgba(255,255,255,0.7); text-decoration: none; transition: color 0.2s; }
     .nav-back:hover { color: var(--orange); }
 
     .container {
@@ -56,7 +67,7 @@
       margin-bottom: 12px;
     }
     h1 {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Playfair Display', 'Playfair Display Fallback', serif;
       font-size: clamp(28px, 4vw, 42px);
       font-weight: 700;
       line-height: 1.15;
@@ -69,7 +80,7 @@
     }
 
     h2 {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Playfair Display', 'Playfair Display Fallback', serif;
       font-size: 1.3rem;
       font-weight: 700;
       color: var(--dark);
@@ -129,23 +140,29 @@
       padding: 28px 48px;
       text-align: center;
       font-size: 0.8rem;
-      color: rgba(255,255,255,0.3);
+      color: rgba(255,255,255,0.7);
       border-top: 1px solid rgba(245,124,0,0.1);
     }
-    footer a { color: rgba(255,255,255,0.4); }
+    footer a { color: rgba(255,255,255,0.7); }
 
     @media(max-width:600px) {
       nav { padding: 0 20px; }
       .container { padding: 40px 20px 60px; }
       footer { padding: 24px 20px; }
     }
+    /* contrast: portocaliu închis pe fundal deschis, aprins pe fundal închis */
+    :root{--orange:#B45309;}
+    nav, footer{--orange:#F57C00;}
+    footer, footer p{color:rgba(255,255,255,0.7);}
+    footer a{color:rgba(255,255,255,0.85);text-decoration:underline;}
+    .social-btn.fb{color:#0F5BC4;}
   </style>
 </head>
 <body>
 
 <nav>
   <a href="index.html" class="nav-logo">
-    <img src="favicon.png" alt="Wok and Noodles"/>
+    <img src="logo-68.png" alt="" width="34" height="34"/>
     <span class="nav-logo-text">Wok and Noodles</span>
   </a>
   <a href="index.html" class="nav-back">← Înapoi la site</a>
@@ -155,7 +172,7 @@
   <div class="page-header">
     <p class="page-tag">Legal</p>
     <h1>Politică de Confidențialitate</h1>
-    <p class="meta">Ultima actualizare: mai 2026 &nbsp;·&nbsp; Versiunea 1.0</p>
+    <p class="meta">Ultima actualizare: septembrie 2026 &nbsp;·&nbsp; Versiunea 1.1</p>
   </div>
 
   <!-- OPERATOR -->
@@ -177,7 +194,7 @@
   <ul>
     <li><strong>Date de identificare:</strong> nume și prenume</li>
     <li><strong>Date de contact:</strong> număr de telefon, adresă de email</li>
-    <li><strong>Date tehnice:</strong> adresa IP, tipul de browser, paginile vizitate, durata sesiunii (colectate automat prin cookie-uri tehnice)</li>
+    <li><strong>Date tehnice:</strong> adresa IP, tipul de browser, paginile vizitate, durata sesiunii (log-uri tehnice ale serverului; prin Google Analytics doar cu acordul dumneavoastră — vezi secțiunea 4)</li>
     <li><strong>Date privind preferințele:</strong> informații furnizate voluntar la efectuarea unei rezervări sau comenzi (ex. alergii alimentare, preferințe de meniu)</li>
   </ul>
   <p><strong>Nu colectăm</strong> date sensibile (date privind sănătatea — cu excepția alergiilor declarate voluntar de dumneavoastră —, date biometrice, date privind convingerile religioase sau politice etc.).</p>
@@ -218,10 +235,15 @@
   </table>
 
   <!-- COOKIE-URI -->
-  <h2>4. Cookie-uri</h2>
-  <p>Site-ul nostru <strong>nu utilizează cookie-uri</strong> de nicio natură — nici esențiale, nici analitice, nici de marketing. Site-ul este o pagină statică HTML care nu instalează niciun cookie în browser-ul dumneavoastră și nu colectează date de navigare.</p>
-  <p>Nu folosim Google Analytics, Facebook Pixel sau orice alt instrument de urmărire a comportamentului utilizatorilor. Prin urmare, <strong>nu este necesar niciun banner de cookie-uri</strong> și nu vi se solicită niciun consimțământ în acest sens.</p>
-  <p>Dacă în viitor vom integra servicii care utilizează cookie-uri, această politică va fi actualizată corespunzător și vi se va solicita consimțământul înainte de activarea acestora.</p>
+  <h2 id="cookie">4. Cookie-uri</h2>
+  <p>Site-ul funcționează fără cookie-uri. Folosim un singur instrument opțional, <strong>Google Analytics 4</strong>, care instalează cookie-uri de analiză <strong>numai după ce vă exprimați acordul</strong> din bannerul afișat la prima vizită. Dacă refuzați, nu se instalează niciun cookie și nu se colectează date de navigare.</p>
+  <table>
+    <tr><th>Cookie</th><th>Furnizor</th><th>Scop</th><th>Durată</th></tr>
+    <tr><td>_ga</td><td>Google Analytics</td><td>Distinge vizitatorii unici, statistic și agregat</td><td>2 ani</td></tr>
+    <tr><td>_ga_&lt;ID&gt;</td><td>Google Analytics</td><td>Păstrează starea sesiunii</td><td>2 ani</td></tr>
+  </table>
+  <p><strong>Ce măsurăm:</strong> paginile vizitate, sursa vizitei (ex. Google, Facebook) și apăsările pe butoanele importante (apel telefonic, WhatsApp, Glovo, Wolt, meniu, hartă). Nu măsurăm conținutul conversațiilor sau al comenzilor și nu folosim datele pentru publicitate.</p>
+  <p><strong>Temei legal:</strong> consimțământul dumneavoastră (Art. 6 alin. 1 lit. a GDPR și art. 4 alin. 5 din Legea nr. 506/2004). Alegerea dumneavoastră se păstrează local, în browser, și o puteți schimba oricând din linkul <a href="#" data-cookie-settings>Setări cookie</a> din subsolul paginii.</p>
 
   <!-- DESTINATARI -->
   <h2>5. Destinatarii datelor</h2>
@@ -230,13 +252,14 @@
     <li><strong>Personalul nostru autorizat</strong> — angajați și colaboratori care au nevoie de acces pentru îndeplinirea atribuțiilor</li>
     <li><strong>Platforme de livrare</strong> — Glovo, Wolt — în măsura necesară procesării comenzilor plasate prin aceste platforme (fiecare acționând ca operator independent)</li>
     <li><strong>Furnizori de servicii IT</strong> — furnizori de hosting, servicii email (acționând ca împuterniciți ai operatorului)</li>
+    <li><strong>Google Ireland Limited</strong> — Google Analytics, doar dacă ați acceptat cookie-urile de analiză (împuternicit al operatorului)</li>
     <li><strong>Autorități publice</strong> — în cazul în care suntem obligați prin lege (ANAF, instanțe judecătorești etc.)</li>
   </ul>
   <p><strong>Nu vindem, nu închiriem și nu transferăm datele dumneavoastră</strong> către terți în scopuri de marketing fără consimțământul dumneavoastră explicit.</p>
 
   <!-- TRANSFER INTERNATIONAL -->
   <h2>6. Transferuri internaționale</h2>
-  <p>În principiu, datele dumneavoastră sunt prelucrate în Spațiul Economic European (SEE). În cazul în care un furnizor de servicii (ex. servicii cloud, platforme de livrare) procesează date în afara SEE, ne asigurăm că transferul se realizează cu garanții adecvate (clauze contractuale standard aprobate de Comisia Europeană conform Art. 46 GDPR).</p>
+  <p>În principiu, datele dumneavoastră sunt prelucrate în Spațiul Economic European (SEE). În cazul în care un furnizor de servicii (ex. servicii cloud, platforme de livrare) procesează date în afara SEE, ne asigurăm că transferul se realizează cu garanții adecvate (clauze contractuale standard aprobate de Comisia Europeană conform Art. 46 GDPR). Pentru Google Analytics, datele pot fi transferate către Google LLC (SUA), companie certificată în cadrul EU-US Data Privacy Framework, pe baza deciziei de adecvare a Comisiei Europene din 10 iulie 2023.</p>
 
   <!-- RETENTIE -->
   <h2>7. Perioada de stocare</h2>
@@ -323,8 +346,9 @@
 
 <footer>
   <p>© 2026 GASTRO ASIA SRL · Wok and Noodles · CUI 37390360</p>
-  <p style="margin-top:6px;"><a href="index.html">← Înapoi la site</a> &nbsp;·&nbsp; <a href="https://anpc.ro" target="_blank">ANPC</a> &nbsp;·&nbsp; <a href="https://ec.europa.eu/consumers/odr" target="_blank">SOL</a></p>
+  <p style="margin-top:6px;"><a href="index.html">← Înapoi la site</a> &nbsp;·&nbsp; <a href="#" data-cookie-settings>Setări cookie</a> &nbsp;·&nbsp; <a href="https://anpc.ro" target="_blank" rel="noopener">ANPC</a> &nbsp;·&nbsp; <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener">SOL</a></p>
 </footer>
 
+<script src="analytics.js" defer></script>
 </body>
 </html>
