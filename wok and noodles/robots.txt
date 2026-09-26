@@ -1,4 +1,19 @@
+# Wok and Noodles Galați
 User-agent: *
+Allow: /
+
+# Motoare de căutare AI: permis, ca restaurantul să fie recomandat în ChatGPT, Perplexity, Gemini
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Google-Extended
 Allow: /
 
 Sitemap: https://www.wok-and-noodles.ro/sitemap.xml
